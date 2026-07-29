@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog · Azuz Digital</title>
+<meta name="description" content="Artigos sobre posicionamento de marca, marketing de resultado e tecnologia para profissionais e empresas que querem ser referência.">
+<link rel="canonical" href="https://azuzdigital.com.br/blog/">
+<link rel="icon" type="image/svg+xml" href="../assets/logo/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="blog.css">
+</head>
+<body>
+
+<div class="noise-overlay" aria-hidden="true"></div>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header" id="header">
+  <div class="container header-inner">
+    <a href="../index.html" class="brand" aria-label="Azuz Digital">
+      <img src="../assets/logo/azuz-white.svg" alt="Azuz Digital" class="brand-logo">
+    </a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="../index.html#servicos">Serviços</a>
+      <a href="../index.html#processo">Método</a>
+      <a href="../index.html#sobre">Sobre</a>
+      <a href="../index.html#pracas">Praças</a>
+      <a href="index.html">Blog</a>
+      <a href="../ebook/index.html">Ebook</a>
+      <a href="../index.html#faq">Dúvidas</a>
+    </nav>
+
+    <div class="header-cta">
+      <a href="https://forms.clickup.com/90171360473/f/2kza3h6t-537/4FM1Z1A12L7P5CXYLY" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Formulário de Interesse</a>
+    </div>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ================= BLOG HERO ================= -->
+  <section class="section section-dark blog-hero">
+    <div class="dot-grid" aria-hidden="true"></div>
+    <div class="container">
+      <p class="section-eyebrow">BLOG ↗</p>
+      <h1 class="display-l">Marcas fortes começam com <span class="text-accent">clareza estratégica.</span></h1>
+      <p class="hero-sub">Posicionamento, marketing de resultado e tecnologia para quem já tem autoridade técnica e quer presença digital à altura.</p>
+    </div>
+  </section>
+
+  <!-- ================= LISTAGEM ================= -->
+  <section class="section section-dark">
+    <div class="container">
+      <div id="blog-grid" class="blog-grid" aria-live="polite"></div>
+      <p id="blog-empty" class="blog-empty" hidden>Nenhum artigo publicado ainda. Volte em breve.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="../assets/logo/azuz-white.svg" alt="Azuz Digital" class="brand-logo">
+      <p>Estratégia que constrói marcas líderes e resultados que se sustentam.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navegação</h4>
+      <a href="../index.html#servicos">Serviços</a>
+      <a href="../index.html#processo">Método</a>
+      <a href="../index.html#sobre">Sobre</a>
+      <a href="../index.html#pracas">Praças</a>
+      <a href="index.html">Blog</a>
+      <a href="../ebook/index.html">Ebook</a>
+      <a href="../index.html#faq">Dúvidas</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contato</h4>
+      <a href="mailto:ag.azuzdigital@gmail.com">ag.azuzdigital@gmail.com</a>
+      <a href="https://instagram.com/ag.azuzdigital" target="_blank" rel="noopener">@ag.azuzdigital</a>
+      <a href="https://forms.clickup.com/90171360473/f/2kza3h6t-537/4FM1Z1A12L7P5CXYLY" target="_blank" rel="noopener">Formulário de Interesse</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Praças</h4>
+      <span>Goiânia</span>
+      <span>Palmas</span>
+      <span>Lisboa</span>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>&copy; <span id="year"></span> Azuz Digital. Todos os direitos reservados.</p>
+    <p class="footer-tag">Marcas fortes são construídas diariamente.</p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+  fetch('articles.json')
+    .then((res) => res.json())
+    .then((articles) => {
+      const grid = document.getElementById('blog-grid');
+      const empty = document.getElementById('blog-empty');
+
+      if (!articles.length) {
+        empty.hidden = false;
+        return;
+      }
+
+      const sorted = [...articles].sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
+
+      grid.innerHTML = sorted.map((post) => {
+        const date = new Date(post.publishedAt + 'T00:00:00');
+        const dateLabel = date.toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' });
+        return `
+          <article class="blog-card">
+            <span class="blog-card-date">${dateLabel}</span>
+            <h3>${post.title}</h3>
+            <p>${post.description}</p>
+            <a class="blog-card-link" href="${post.slug}/index.html">Ler artigo →</a>
+          </article>
+        `;
+      }).join('');
+    })
+    .catch(() => {
+      document.getElementById('blog-empty').hidden = false;
+    });
+</script>
+</body>
+</html>

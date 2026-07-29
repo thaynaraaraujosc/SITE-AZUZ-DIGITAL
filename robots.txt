@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://azuzdigital.com.br/sitemap.xml
