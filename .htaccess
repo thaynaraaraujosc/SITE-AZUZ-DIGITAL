@@ -1,0 +1,6 @@
+<FilesMatch "^DNA\.md$">
+  Require all denied
+</FilesMatch>
+
+RewriteEngine On
+RewriteRule ^\.claude/ - [F,L]
