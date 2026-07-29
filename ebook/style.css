@@ -1,0 +1,117 @@
+/* ============================================================
+   EBOOK — estilos específicos desta página
+   (reaproveita tokens, tipografia e componentes de ../css/style.css)
+   ============================================================ */
+
+.ebook-header {
+  padding: 22px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.ebook-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.ebook-hero { padding: 64px 0 90px; }
+
+.microcopy {
+  margin: 16px 0 0;
+  font-size: 12.5px;
+  color: var(--text-on-dark-soft);
+  text-align: center;
+}
+
+.trust-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  font-size: 13px;
+  color: var(--text-on-dark-soft);
+}
+
+.persona-grid { grid-template-columns: repeat(4, 1fr); }
+
+/* ---------- Chapter list ---------- */
+.chapter-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 48px;
+  margin-top: 12px;
+}
+.chapter-item {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(11,21,51,0.1);
+  font-size: 15px;
+  color: var(--text-on-light);
+}
+.chapter-num {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--blue);
+  flex-shrink: 0;
+}
+
+/* ---------- FAQ (dark variant for this page) ---------- */
+.faq-list-dark .faq-question { color: #fff; }
+.faq-list-dark .faq-item { border-bottom-color: rgba(255,255,255,0.12); }
+.faq-list-dark .faq-icon { border-color: rgba(255,255,255,0.25); color: #fff; }
+.faq-list-dark .faq-answer p { color: var(--text-on-dark-soft); }
+.faq-grid .faq-intro .display-m { color: #fff; }
+
+/* ---------- Price block ---------- */
+.price-block {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 14px;
+  margin: 40px 0 6px;
+}
+.price-old {
+  font-family: var(--font-display);
+  font-size: 22px;
+  color: var(--text-on-dark-soft);
+  text-decoration: line-through;
+}
+.price-new {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 48px;
+  color: #fff;
+}
+
+/* ---------- Footer ---------- */
+.ebook-footer { background: #080f26; padding: 44px 0; }
+.ebook-footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  text-align: center;
+}
+.ebook-footer-inner .brand-logo { height: 24px; opacity: 0.85; }
+.ebook-footer-inner p { margin: 0; font-size: 12.5px; color: rgba(255,255,255,0.4); }
+.ebook-footer-inner a { font-size: 13px; color: rgba(255,255,255,0.75); }
+.ebook-footer-inner a:hover { color: #fff; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 980px) {
+  .persona-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 760px) {
+  .ebook-hero { padding: 48px 0 60px; }
+  .persona-grid { grid-template-columns: 1fr; }
+  .chapter-list { grid-template-columns: 1fr; column-gap: 0; }
+  .price-new { font-size: 38px; }
+}

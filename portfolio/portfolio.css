@@ -1,0 +1,222 @@
+/* ============================================================
+   PORTFÓLIO — estilos específicos desta seção
+   (reaproveita tokens, tipografia e componentes do css/style.css principal)
+   ============================================================ */
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-on-dark-soft);
+  margin-bottom: 22px;
+}
+.breadcrumb a { color: var(--text-on-dark-soft); transition: color 0.25s; }
+.breadcrumb a:hover { color: #fff; }
+.breadcrumb span { opacity: 0.5; }
+
+/* ---------- Hub: cards de categoria ---------- */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 12px;
+}
+.category-card {
+  position: relative;
+  display: block;
+  padding: 44px 36px;
+  border-radius: var(--radius-l);
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.03);
+  overflow: hidden;
+  transition: transform 0.4s var(--ease), border-color 0.4s var(--ease), background 0.4s var(--ease);
+}
+.category-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(46,107,255,0.4);
+  background: linear-gradient(160deg, rgba(46,107,255,0.14), rgba(255,255,255,0.03));
+}
+.category-icon {
+  width: 52px; height: 52px;
+  border-radius: 14px;
+  background: rgba(46,107,255,0.14);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 26px;
+}
+.category-icon svg { width: 24px; height: 24px; }
+.category-card h3 { font-size: 22px; margin-bottom: 10px; }
+.category-card p { font-size: 14px; color: var(--text-on-dark-soft); margin: 0 0 20px; max-width: 340px; }
+.category-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+.category-card:hover .category-arrow em { transform: translate(3px, -3px); }
+.category-arrow em { display: inline-block; font-style: normal; transition: transform 0.3s var(--ease); }
+
+/* ---------- Galeria (grid comum às 4 categorias) ---------- */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 12px;
+}
+.portfolio-item {
+  position: relative;
+  border-radius: var(--radius-m);
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: linear-gradient(155deg, #16204a 0%, #0B1533 62%, #0a1128 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio-item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255,255,255,0.07) 1px, transparent 1px);
+  background-size: 18px 18px;
+  opacity: 0.5;
+}
+.portfolio-placeholder {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: rgba(255,255,255,0.82);
+}
+.portfolio-placeholder .ph-icon {
+  width: 40px; height: 40px;
+  margin: 0 auto 14px;
+  opacity: 0.9;
+}
+.portfolio-placeholder .ph-label {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+}
+.portfolio-placeholder .ph-tag {
+  display: block;
+  margin-top: 6px;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+}
+
+/* aspect ratios por categoria */
+.ratio-square { aspect-ratio: 1 / 1; }
+.ratio-site { aspect-ratio: 16 / 10; }
+.ratio-video { aspect-ratio: 9 / 16; }
+
+/* tile com vídeo real (projeto já produzido) */
+.portfolio-item-video { background: #000; }
+.portfolio-item-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* moldura de navegador, usada em "sites" */
+.browser-chrome {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 30px;
+  background: rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 12px;
+  z-index: 2;
+}
+.browser-chrome span {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.18);
+}
+.ratio-site .portfolio-placeholder { padding-top: 22px; }
+
+/* botão de play, usado em "videos" */
+.play-badge {
+  position: absolute;
+  top: 16px; right: 16px;
+  z-index: 2;
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.35);
+  border: 1px solid rgba(255,255,255,0.25);
+  display: flex; align-items: center; justify-content: center;
+}
+.play-badge svg { width: 12px; height: 12px; }
+
+/* badge de slides, usado em "carrosséis" */
+.slide-badge {
+  position: absolute;
+  top: 14px; right: 14px;
+  z-index: 2;
+  font-size: 11px;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(0,0,0,0.4);
+  padding: 4px 9px;
+  border-radius: 100px;
+  letter-spacing: 0.02em;
+}
+
+/* fotos reais de projeto (usado quando já há imagem, não placeholder) */
+.portfolio-photo { margin: 0; }
+.portfolio-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* tile de logotipo isolado (fundo transparente), ex.: identidade própria da Azuz */
+.portfolio-logo-tile { background: #fff; padding: 14%; }
+.portfolio-logo-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.portfolio-caption {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  z-index: 2;
+  padding: 10px 14px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(0deg, rgba(0,0,0,0.72), rgba(0,0,0,0));
+}
+
+.gallery-note {
+  margin-top: 44px;
+  padding: 22px 26px;
+  border-radius: var(--radius-m);
+  border: 1px dashed rgba(255,255,255,0.18);
+  font-size: 13.5px;
+  color: var(--text-on-dark-soft);
+  text-align: center;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 980px) {
+  .category-grid { grid-template-columns: 1fr; }
+  .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 620px) {
+  .portfolio-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
+  .category-card { padding: 34px 26px; }
+}
