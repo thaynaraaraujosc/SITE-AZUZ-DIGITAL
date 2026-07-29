@@ -89,7 +89,7 @@ Como não há descoberta automática, publicar exige tocar em 2 arquivos além d
 2. **`sitemap.xml`** (raiz do projeto) — adicione uma entrada `<url>`:
    ```xml
    <url>
-     <loc>https://azuzdigital.com.br/blog/<slug>/index.html</loc>
+     <loc>https://azuzdigital.com/blog/<slug>/index.html</loc>
      <lastmod>YYYY-MM-DD</lastmod>
      <changefreq>monthly</changefreq>
      <priority>0.7</priority>

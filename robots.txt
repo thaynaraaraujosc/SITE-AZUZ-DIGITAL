@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://azuzdigital.com.br/sitemap.xml
+Sitemap: https://azuzdigital.com/sitemap.xml

@@ -16,7 +16,7 @@ Azuz Digital é agência de **marketing e tecnologia**. Frentes de atuação:
 
 Fundadora: Thaynara Araujo, CEO e Estrategista de Marca. Sede em expansão para Goiânia (GO), também atende Palmas (TO) e Lisboa (Portugal).
 
-Domínio: azuzdigital.com.br · Instagram: @Ag.azuzdigital
+Domínio: azuzdigital.com · Instagram: @Ag.azuzdigital
 
 ## 2. Persona do leitor do blog
 
