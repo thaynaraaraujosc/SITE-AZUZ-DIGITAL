@@ -31,9 +31,23 @@ Anti-persona: quem busca dicas genéricas gratuitas e não tem orçamento para p
 ## 3. Pilares de conteúdo (temas do blog)
 
 1. Posicionamento e branding para profissionais/empresas
-2. Marketing de resultado (tráfego pago, funil, métricas)
+2. Marketing e publicidade em geral (tráfego pago, funil, métricas, campanhas, criação publicitária, redes sociais, conteúdo, marca em mídia paga e orgânica)
 3. Tecnologia aplicada a negócios (sites, apps, CRM, automação)
-4. Bastidores/método Azuz (diagnóstico, estratégia, execução, resultados)
+4. Inteligência artificial aplicada a marketing e negócios (IA generativa, automação de atendimento, GEO/otimização para IAs de busca, uso responsável de IA em conteúdo e publicidade)
+5. Bastidores/método Azuz (diagnóstico, estratégia, execução, resultados)
+
+**Importante: os pilares 2, 3 e 4 (marketing, publicidade e IA) são de interesse geral e
+não devem se limitar à persona médica.** O pilar 1 (posicionamento/branding) é o único que
+frequentemente puxa para uma profissão específica (médico, advogado, consultora,
+empresário); nos demais pilares, escreva pensando em qualquer negócio ou profissional que
+precise se posicionar digitalmente, sem restringir a linguagem a um nicho regulado (CFM,
+OAB) a menos que o tema exija.
+
+Ao escolher o tema em `blog-post` Passo 2, **alterne a persona/profissão a cada artigo**
+(não publique dois artigos seguidos sobre a mesma profissão, e não concentre a produção em
+conteúdo médico) e **garanta que marketing, publicidade e IA apareçam com a mesma
+frequência que os temas de branding/posicionamento**, revisando `blog/articles.json` para
+balancear a distribuição entre os 5 pilares antes de escolher.
 
 ## 4. Tom de voz (aplicado a artigo de blog)
 
