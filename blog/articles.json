@@ -7,5 +7,14 @@
     "readingTime": 6,
     "category": "Posicionamento e branding para profissionais/empresas",
     "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "seo-para-ia",
+    "title": "SEO para IA (GEO): como aparecer nas respostas do ChatGPT",
+    "description": "GEO (SEO para IA) é a estratégia para sua marca aparecer nas respostas do ChatGPT, Perplexity e Google AI Overviews. Veja como aplicar o passo a passo.",
+    "publishedAt": "2026-07-30",
+    "readingTime": 5,
+    "category": "Inteligência artificial aplicada a marketing e negócios",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
   }
 ]
