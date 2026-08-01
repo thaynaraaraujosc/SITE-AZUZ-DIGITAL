@@ -160,6 +160,14 @@ h1, h2, h3 {
 }
 
 .brand-logo { height: 30px; width: auto; }
+.brand-logo-navy { display: none; }
+
+/* Header opens over a light hero on the homepage: swap to the navy logo/lines
+   until the header scrolls into its solid navy state. */
+body.home .site-header:not(.scrolled) .brand-logo-white { display: none; }
+body.home .site-header:not(.scrolled) .brand-logo-navy { display: block; }
+body.home .site-header:not(.scrolled) .main-nav a { color: var(--navy); }
+body.home .site-header:not(.scrolled) .nav-toggle span { background: var(--navy); }
 
 .main-nav {
   display: flex;
@@ -167,8 +175,17 @@ h1, h2, h3 {
   font-size: 14px;
   font-weight: 500;
 }
-.main-nav a { opacity: 0.82; transition: opacity 0.25s; }
+.main-nav a { position: relative; opacity: 0.82; transition: opacity 0.25s; }
 .main-nav a:hover { opacity: 1; }
+.main-nav a::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 100%; bottom: -5px;
+  height: 2px;
+  background: var(--blue);
+  transition: right 0.3s var(--ease);
+}
+.main-nav a:hover::after { right: 0; }
 
 .header-cta { flex-shrink: 0; }
 
@@ -244,6 +261,15 @@ h1, h2, h3 {
 
 .hero h1 { max-width: 880px; margin: 0 auto; }
 
+.hero-tagline {
+  margin: 18px auto 0;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-style: italic;
+  font-size: 16px;
+  color: var(--text-on-dark-soft);
+}
+
 .hero-sub {
   max-width: 600px;
   margin: 26px auto 0;
@@ -285,61 +311,33 @@ h1, h2, h3 {
 .section-dark { background: var(--navy); }
 .section-light { background: var(--gray-light); color: var(--text-on-light); }
 
-/* ============================================================
-   NÃO É / É
-   ============================================================ */
-.split-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-  margin-top: 12px;
-}
-.split-card {
-  border-radius: var(--radius-m);
-  padding: 40px;
-  border: 1px solid rgba(255,255,255,0.1);
-}
-.split-not { background: rgba(255,255,255,0.03); }
-.split-is {
-  background: linear-gradient(160deg, rgba(46,107,255,0.16), rgba(46,107,255,0.04));
-  border-color: rgba(46,107,255,0.35);
-}
-.split-card h3 { font-size: 19px; margin-bottom: 20px; }
-.split-card li {
-  position: relative;
-  padding-left: 22px;
-  margin-bottom: 14px;
-  font-size: 14.5px;
-  color: var(--text-on-dark-soft);
-}
-.split-card li::before {
-  content: '';
-  position: absolute; left: 0; top: 7px;
-  width: 7px; height: 7px;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.3);
-}
-.split-is li::before { background: var(--blue); }
-.split-is li { color: rgba(255,255,255,0.86); }
+/* Decorative + component variants for whichever section (incl. the hero and
+   cta-final) currently sits on a light background, since these pieces were
+   originally designed against navy. */
+.section-light .dot-grid { background-image: radial-gradient(rgba(11,21,51,0.08) 1px, transparent 1px); }
+.section-light .arc-2 { border-color: rgba(11,21,51,0.06); }
+.section-light .eyebrow-pill { background: rgba(11,21,51,0.05); border-color: rgba(11,21,51,0.12); color: var(--navy); }
+.section-light .hero-tagline { color: var(--text-on-light-soft); }
+.section-light .hero-sub { color: var(--text-on-light-soft); }
+.section-light .hero-stats { border-top-color: rgba(11,21,51,0.12); }
+.section-light .stat-num { color: var(--navy); }
+.section-light .stat-label { color: var(--text-on-light-soft); }
+.section-light .btn-ghost { border-color: rgba(11,21,51,0.25); color: var(--navy); }
+.section-light .btn-ghost:hover { border-color: var(--navy); }
+.section-light .process-step { border-color: rgba(11,21,51,0.08); background: #fff; }
+.section-light .process-step p { color: var(--text-on-light-soft); }
+.section-light .praca-card { border-color: rgba(11,21,51,0.08); background: #fff; box-shadow: 0 10px 26px rgba(11,21,51,0.05); }
+.section-light .praca-card p { color: var(--text-on-light-soft); }
 
-/* ============================================================
-   SITE SHOWCASE
-   ============================================================ */
-.site-showcase { text-align: center; }
-.site-showcase-inner { position: relative; z-index: 2; }
-.site-showcase .display-xl { max-width: 760px; margin: 0 auto; }
-.site-showcase .hero-sub { margin-left: auto; margin-right: auto; }
-
-.showcase-video {
-  margin: 56px auto 0;
-  max-width: 380px;
-  border-radius: var(--radius-l);
-  overflow: hidden;
-  border: 1px solid rgba(255,255,255,0.14);
-  box-shadow: 0 40px 80px rgba(0,0,0,0.35);
-  background: #000;
-}
-.showcase-video video { width: 100%; height: auto; display: block; }
+/* Same idea in reverse: components originally designed for a light section,
+   now landing on navy. */
+.section-dark .body-copy { color: var(--text-on-dark-soft); }
+.section-dark .about-quote { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14); }
+.section-dark .service-cta-banner { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12); }
+.section-dark .faq-item { border-bottom-color: rgba(255,255,255,0.14); }
+.section-dark .faq-question { color: #fff; }
+.section-dark .faq-icon { border-color: rgba(255,255,255,0.25); }
+.section-dark .faq-answer p { color: var(--text-on-dark-soft); }
 
 /* ============================================================
    SERVIÇOS
@@ -380,6 +378,61 @@ h1, h2, h3 {
 .service-card-cta h3 { color: #fff; }
 .service-card-cta p { color: rgba(255,255,255,0.66); margin-bottom: 20px; }
 .service-card-cta:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(11,21,51,0.28); }
+
+.areas-grid { grid-template-columns: repeat(4, 1fr); }
+.area-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.area-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--blue);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.45s var(--ease);
+}
+.area-card:hover::before { transform: scaleX(1); }
+.area-card:hover { transform: translateY(-6px); box-shadow: 0 24px 48px rgba(11,21,51,0.1); }
+.area-card p { margin-bottom: 16px; }
+.area-list { margin-top: auto; padding-top: 14px; border-top: 1px solid rgba(11,21,51,0.08); }
+.area-list li {
+  position: relative;
+  padding-left: 16px;
+  font-size: 12.5px;
+  color: var(--text-on-light-soft);
+  margin-bottom: 8px;
+}
+.area-list li:last-child { margin-bottom: 0; }
+.area-list li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 7px;
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--blue);
+}
+
+.service-cta-banner {
+  margin-top: 24px;
+  background: var(--navy);
+  border-radius: var(--radius-m);
+  padding: 30px 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
+}
+.service-cta-banner:hover { transform: translateY(-3px); box-shadow: 0 20px 40px rgba(11,21,51,0.22); }
+.service-cta-banner h3 { color: #fff; font-size: 18px; margin-bottom: 6px; }
+.service-cta-banner p { color: rgba(255,255,255,0.66); font-size: 13.5px; margin: 0; max-width: 440px; }
+.service-cta-banner .btn { flex-shrink: 0; }
 
 /* ============================================================
    PROCESSO
@@ -597,12 +650,38 @@ h1, h2, h3 {
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s var(--ease), transform 0.7s var(--ease); }
 .reveal.is-visible { opacity: 1; transform: translateY(0); }
 
+/* Staggered entrance for grid items — subtle cascade instead of everything popping at once */
+.services-grid .reveal:nth-child(1), .process-grid .reveal:nth-child(1), .pracas-grid .reveal:nth-child(1), .feedback-grid .reveal:nth-child(1) { transition-delay: 0s; }
+.services-grid .reveal:nth-child(2), .process-grid .reveal:nth-child(2), .pracas-grid .reveal:nth-child(2), .feedback-grid .reveal:nth-child(2) { transition-delay: 0.08s; }
+.services-grid .reveal:nth-child(3), .process-grid .reveal:nth-child(3), .pracas-grid .reveal:nth-child(3), .feedback-grid .reveal:nth-child(3) { transition-delay: 0.16s; }
+.services-grid .reveal:nth-child(4), .process-grid .reveal:nth-child(4), .feedback-grid .reveal:nth-child(4) { transition-delay: 0.24s; }
+.feedback-grid .reveal:nth-child(5) { transition-delay: 0.3s; }
+.feedback-grid .reveal:nth-child(6) { transition-delay: 0.36s; }
+.feedback-grid .reveal:nth-child(7) { transition-delay: 0.42s; }
+.feedback-grid .reveal:nth-child(8) { transition-delay: 0.48s; }
+
+/* Ambient drift on hero decorative arcs, paused for reduced-motion users */
+@media (prefers-reduced-motion: no-preference) {
+  .arc-1 { animation: arc-drift-1 22s ease-in-out infinite; }
+  .arc-2 { animation: arc-drift-2 26s ease-in-out infinite; }
+}
+@keyframes arc-drift-1 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-14px, 18px); }
+}
+@keyframes arc-drift-2 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(16px, -14px); }
+}
+
 /* ============================================================
    RESPONSIVE
    ============================================================ */
 @media (max-width: 980px) {
   .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .areas-grid { grid-template-columns: repeat(2, 1fr); }
   .process-grid { grid-template-columns: repeat(2, 1fr); }
+  .service-cta-banner { padding: 26px; }
   .hero-stats { row-gap: 30px; }
   .stat-divider { display: none; }
   .stat { width: 44%; }
@@ -632,11 +711,12 @@ h1, h2, h3 {
   .hero { padding: 140px 0 70px; }
   .hero-stats { gap: 14px; row-gap: 24px; }
 
-  .split-grid { grid-template-columns: 1fr; }
   .services-grid { grid-template-columns: 1fr; }
+  .areas-grid { grid-template-columns: 1fr; }
   .process-grid { grid-template-columns: 1fr; }
   .pracas-grid { grid-template-columns: 1fr; }
   .feedback-grid { gap: 12px; }
+  .service-cta-banner { flex-direction: column; align-items: flex-start; }
 
   .section { padding: 76px 0; }
   .footer-inner { grid-template-columns: 1fr; gap: 32px; }

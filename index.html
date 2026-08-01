@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="home">
 
 <div class="noise-overlay" aria-hidden="true"></div>
 
@@ -19,7 +19,8 @@
 <header class="site-header" id="header">
   <div class="container header-inner">
     <a href="#top" class="brand" aria-label="Azuz Digital">
-      <img src="assets/logo/azuz-white.svg" alt="Azuz Digital" class="brand-logo">
+      <img src="assets/logo/azuz-white.svg" alt="Azuz Digital" class="brand-logo brand-logo-white">
+      <img src="assets/logo/azuz-navy.svg" alt="Azuz Digital" class="brand-logo brand-logo-navy">
     </a>
 
     <nav class="main-nav" id="main-nav">
@@ -45,17 +46,19 @@
 <main id="top">
 
   <!-- ================= HERO ================= -->
-  <section class="hero">
+  <section class="hero section-light">
     <div class="dot-grid" aria-hidden="true"></div>
     <div class="arc arc-1" aria-hidden="true"></div>
     <div class="arc arc-2" aria-hidden="true"></div>
 
     <div class="container hero-inner">
-      <p class="eyebrow-pill"><span>AGÊNCIA DE MARKETING E TECNOLOGIA</span> <em>↗</em></p>
+      <p class="eyebrow-pill"><span>ESTRATÉGIA · COMUNICAÇÃO · TECNOLOGIA</span> <em>↗</em></p>
 
       <h1 class="display-xl">
-        Marcas fortes são <span class="text-accent">construídas diariamente.</span>
+        Agência de <span class="text-accent">publicidade, comunicação</span> e tecnologia.
       </h1>
+
+      <p class="hero-tagline">Marcas fortes são construídas diariamente.</p>
 
       <p class="hero-sub">
         Estratégia de marca e capacidade técnica de desenvolvimento em um único método: da construção da marca
@@ -70,84 +73,100 @@
 
       <div class="hero-stats">
         <div class="stat">
-          <span class="stat-num">30+</span>
+          <span class="stat-num" data-count="30" data-suffix="+">0</span>
           <span class="stat-label">marcas atendidas</span>
         </div>
         <div class="stat-divider" aria-hidden="true">◆</div>
         <div class="stat">
-          <span class="stat-num">3</span>
+          <span class="stat-num" data-count="3">0</span>
           <span class="stat-label">praças de atuação</span>
         </div>
         <div class="stat-divider" aria-hidden="true">◆</div>
         <div class="stat">
-          <span class="stat-num">7+</span>
-          <span class="stat-label">frentes de serviço</span>
+          <span class="stat-num" data-count="4">0</span>
+          <span class="stat-label">áreas de atuação</span>
         </div>
         <div class="stat-divider" aria-hidden="true">◆</div>
         <div class="stat">
-          <span class="stat-num">04</span>
+          <span class="stat-num" data-count="4" data-pad="2">00</span>
           <span class="stat-label">etapas de método</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ================= SITE SHOWCASE ================= -->
-  <section class="section section-dark site-showcase" id="sites">
-    <div class="dot-grid" aria-hidden="true"></div>
-    <div class="container site-showcase-inner">
-      <p class="section-eyebrow">DESENVOLVIMENTO DE SITES ↗</p>
-      <h2 class="display-xl reveal">Faça o seu <span class="text-accent">site</span> com a gente.</h2>
-      <p class="hero-sub reveal">
-        Sites institucionais e comerciais sob medida, construídos para sustentar a autoridade que a sua marca já tem.
-      </p>
-      <div class="hero-actions reveal">
-        <a href="https://wa.me/5562996340438?text=Ol%C3%A1%2C%20quero%20falar%20sobre%20o%20site%20da%20minha%20marca." target="_blank" rel="noopener" class="btn btn-primary">Falar sobre o meu site</a>
-      </div>
-
-      <div class="showcase-video reveal">
-        <video controls preload="metadata" playsinline poster="assets/video/azuz-site-video-poster.jpg">
-          <source src="assets/video/azuz-site-video.mp4" type="video/mp4">
-          Seu navegador não suporta a reprodução deste vídeo.
-        </video>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= NÃO É / É ================= -->
-  <section class="section section-dark reveal-parent" id="posicionamento">
+  <!-- ================= ÁREAS DE ATUAÇÃO ================= -->
+  <section class="section section-dark" id="servicos">
     <div class="container">
-      <p class="section-eyebrow">POSICIONAMENTO ↗</p>
-      <h2 class="display-m reveal">Existem duas formas de tocar uma agência. A Azuz escolheu a difícil.</h2>
+      <p class="section-eyebrow section-eyebrow-dark">ÁREAS DE ATUAÇÃO ↗</p>
+      <h2 class="display-m reveal">Quatro frentes. Um método só.</h2>
+      <p class="section-lead reveal">
+        Deixamos de ser apenas uma agência de marketing tradicional. Hoje combinamos estratégia de marca com
+        capacidade técnica de desenvolvimento para atender o cliente de ponta a ponta: da mídia de massa e
+        ativação presencial à presença digital e à infraestrutura tecnológica própria.
+      </p>
 
-      <div class="split-grid">
-        <div class="split-card split-not reveal">
-          <h3>O que a Azuz não é</h3>
-          <ul>
-            <li>Produtora de posts bonitos sem estratégia por trás</li>
-            <li>Promessa de viral ou de fórmula pronta</li>
-            <li>Contrato fechado sem diagnóstico prévio</li>
-            <li>Agência colorida e jovem que se vende pelo hype</li>
+      <div class="services-grid areas-grid">
+        <article class="service-card area-card reveal">
+          <span class="service-index">01 · ATL</span>
+          <h3>Mídia de massa</h3>
+          <p>Presença de marca fora das telas: TV, rádio, outdoor, painel e revista. A Azuz planeja, negocia e coordena a veiculação com fornecedores especializados em cada praça.</p>
+          <ul class="area-list">
+            <li>Planejamento de mídia de massa</li>
+            <li>Mídia exterior (outdoor e painel)</li>
+            <li>Roteiro e produção de spot</li>
           </ul>
-        </div>
-        <div class="split-card split-is reveal">
-          <h3>O que a Azuz é</h3>
-          <ul>
-            <li>Método de diagnóstico, estratégia e execução</li>
-            <li>Posicionamento que sustenta autoridade real</li>
-            <li>Parceria de longo prazo, não campanha isolada</li>
-            <li>Performance mensurável em cada frente contratada</li>
+        </article>
+
+        <article class="service-card area-card reveal">
+          <span class="service-index">02 · BTL</span>
+          <h3>Ações no ponto</h3>
+          <p>Presença física da marca onde o público está de fato: feiras, eventos do setor e ativações, com curadoria de material e coordenação de fornecedores especializados.</p>
+          <ul class="area-list">
+            <li>Ativação em feiras e eventos</li>
+            <li>Brindes e materiais promocionais</li>
+            <li>Patrocínio e presença institucional</li>
           </ul>
+        </article>
+
+        <article class="service-card area-card reveal">
+          <span class="service-index">03 · Digital</span>
+          <h3>Posicionamento e performance</h3>
+          <p>Da construção da marca à captação de clientes pelos canais digitais, com time interno de social media, design e vídeo, sob uma única direção de conta.</p>
+          <ul class="area-list">
+            <li>Posicionamento & branding</li>
+            <li>Social media (conteúdo e produção)</li>
+            <li>Tráfego pago e automação de CRM</li>
+          </ul>
+        </article>
+
+        <article class="service-card area-card reveal">
+          <span class="service-index">04 · Tecnologia</span>
+          <h3>Infraestrutura própria</h3>
+          <p>A base técnica onde a estratégia roda: sites, aplicativos e sistemas próprios, conduzidos pela CEO, também engenheira de software.</p>
+          <ul class="area-list">
+            <li>Sites institucionais e landing pages</li>
+            <li>Aplicativos e sistemas sob medida</li>
+            <li>CRM próprio & integrações</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="service-cta-banner reveal">
+        <div>
+          <h3>Não sabe por onde começar?</h3>
+          <p>O diagnóstico aponta a frente certa entre ATL, BTL, Digital e Tecnologia antes de qualquer contrato.</p>
         </div>
+        <a href="https://forms.clickup.com/90171360473/f/2kza3h6t-537/4FM1Z1A12L7P5CXYLY" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Formulário de Interesse</a>
       </div>
     </div>
   </section>
 
   <!-- ================= FEEDBACKS ================= -->
-  <section class="section section-light" id="feedbacks">
+  <section class="section section-dark" id="feedbacks">
     <div class="container">
       <p class="section-eyebrow section-eyebrow-dark">RESULTADOS ↗</p>
-      <h2 class="display-m dark-text reveal">Resultado que aparece na conversa, não só no relatório.</h2>
+      <h2 class="display-m reveal">Resultado que aparece na conversa, não só no relatório.</h2>
       <p class="section-lead reveal">Prints reais de mensagens de quem trabalha com a Azuz.</p>
 
       <div class="feedback-grid">
@@ -163,57 +182,12 @@
     </div>
   </section>
 
-  <!-- ================= SERVIÇOS ================= -->
-  <section class="section section-light" id="servicos">
-    <div class="container">
-      <p class="section-eyebrow section-eyebrow-dark">O QUE FAZEMOS ↗</p>
-      <h2 class="display-m dark-text reveal">Marketing e tecnologia. Um método só.</h2>
-      <p class="section-lead reveal">
-        Deixamos de ser apenas uma agência de marketing tradicional. Hoje combinamos estratégia de marca com
-        capacidade técnica de desenvolvimento para atender o cliente de ponta a ponta: da construção da marca
-        à infraestrutura digital que sustenta o negócio.
-      </p>
-
-      <div class="services-grid">
-        <article class="service-card reveal">
-          <span class="service-index">01</span>
-          <h3>Marketing e fortalecimento de marca</h3>
-          <p>Estratégias de posicionamento, conteúdo e branding para lançar e fortalecer marcas no mercado.</p>
-        </article>
-
-        <article class="service-card reveal">
-          <span class="service-index">02</span>
-          <h3>Desenvolvimento de sites</h3>
-          <p>Criação de sites institucionais e comerciais sob medida para os clientes.</p>
-        </article>
-
-        <article class="service-card reveal">
-          <span class="service-index">03</span>
-          <h3>Desenvolvimento de aplicativos</h3>
-          <p>Construção de aplicativos próprios para clientes que precisam de soluções digitais personalizadas.</p>
-        </article>
-
-        <article class="service-card reveal">
-          <span class="service-index">04</span>
-          <h3>CRM próprio</h3>
-          <p>Desenvolvemos e operamos nosso próprio sistema de CRM, usado internamente e oferecido como solução para clientes.</p>
-        </article>
-
-        <article class="service-card service-card-cta reveal">
-          <h3>Não sabe por onde começar?</h3>
-          <p>O diagnóstico aponta a frente certa antes de qualquer contrato.</p>
-          <a href="https://forms.clickup.com/90171360473/f/2kza3h6t-537/4FM1Z1A12L7P5CXYLY" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Formulário de Interesse</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
   <!-- ================= MÉTODO / PROCESSO ================= -->
-  <section class="section section-dark" id="processo">
+  <section class="section section-light" id="processo">
     <div class="dot-grid" aria-hidden="true"></div>
     <div class="container">
       <p class="section-eyebrow">MÉTODO ↗</p>
-      <h2 class="display-m reveal">Da leitura da marca ao resultado que se sustenta.</h2>
+      <h2 class="display-m dark-text reveal">Da leitura da marca ao resultado que se sustenta.</h2>
 
       <div class="process-grid">
         <div class="process-step reveal">
@@ -241,36 +215,38 @@
   </section>
 
   <!-- ================= SOBRE ================= -->
-  <section class="section section-light" id="sobre">
+  <section class="section section-dark" id="sobre">
     <div class="container about-grid">
       <div class="about-copy reveal">
         <p class="section-eyebrow section-eyebrow-dark">SOBRE A AZUZ ↗</p>
-        <h2 class="display-m dark-text">Liderada por quem assina o resultado.</h2>
+        <h2 class="display-m">Liderada por quem assina o resultado.</h2>
         <p class="section-lead">
           A Azuz Digital nasceu do rebranding da MarkMed. É uma agência founder-led: reconhecível tanto como
           empresa quanto como extensão da autoridade de quem está à frente dela.
         </p>
         <p class="body-copy">
-          Fundada e liderada por <strong>Thaynara Araujo</strong>, CEO, Diretora Criativa e Estrategista de Marca.
-          O trabalho é feito para marcas com autoridade técnica real, médicos, consultoras, advogados e empresários
-          que ainda não têm a presença digital proporcional ao que já construíram.
+          Fundada e liderada por <strong>Thaynara Araujo</strong>, CEO, Estrategista de Marca e Engenheira de Software.
+          Essa combinação está na origem de como a Azuz trabalha: estratégia de posicionamento e construção técnica
+          caminham juntas, não em departamentos separados. O trabalho é feito para marcas com autoridade técnica real,
+          médicos, consultoras, advogados e empresários que ainda não têm a presença digital proporcional ao que já
+          construíram.
         </p>
-        <a href="https://wa.me/5562996340438?text=Ol%C3%A1%2C%20quero%20falar%20com%20um%20especialista%20da%20Azuz%20Digital." target="_blank" rel="noopener" class="btn btn-outline-dark">Falar com especialista</a>
+        <a href="https://wa.me/5562996340438?text=Ol%C3%A1%2C%20quero%20falar%20com%20um%20especialista%20da%20Azuz%20Digital." target="_blank" rel="noopener" class="btn btn-ghost">Falar com especialista</a>
       </div>
       <div class="about-quote reveal">
         <blockquote>
           "Marketing é consequência. Estratégia é a causa."
         </blockquote>
-        <p class="quote-role">Thaynara Araujo<br><span>CEO · Diretora Criativa · Estrategista de Marca</span></p>
+        <p class="quote-role">Thaynara Araujo<br><span>CEO · Estrategista de Marca · Engenheira de Software</span></p>
       </div>
     </div>
   </section>
 
   <!-- ================= PRAÇAS ================= -->
-  <section class="section section-dark" id="pracas">
+  <section class="section section-light" id="pracas">
     <div class="container">
       <p class="section-eyebrow">PRAÇAS DE ATUAÇÃO ↗</p>
-      <h2 class="display-m reveal">Presença local, método replicável.</h2>
+      <h2 class="display-m dark-text reveal">Presença local, método replicável.</h2>
 
       <div class="pracas-grid pracas-grid-2">
         <div class="praca-card reveal">
@@ -286,11 +262,11 @@
   </section>
 
   <!-- ================= FAQ ================= -->
-  <section class="section section-light" id="faq">
+  <section class="section section-dark" id="faq">
     <div class="container faq-grid">
       <div class="faq-intro reveal">
         <p class="section-eyebrow section-eyebrow-dark">DÚVIDAS FREQUENTES ↗</p>
-        <h2 class="display-m dark-text">Antes de agendar o diagnóstico.</h2>
+        <h2 class="display-m">Antes de agendar o diagnóstico.</h2>
         <p class="section-lead">O que costuma ser perguntado antes de fechar com a Azuz.</p>
       </div>
 
@@ -355,11 +331,11 @@
   </section>
 
   <!-- ================= CTA FINAL ================= -->
-  <section class="section section-dark cta-final" id="contato">
+  <section class="section section-light cta-final" id="contato">
     <div class="dot-grid" aria-hidden="true"></div>
     <div class="container cta-final-inner">
       <p class="section-eyebrow">PRÓXIMO PASSO ↗</p>
-      <h2 class="display-l reveal">Pronta para ser referência além do seu círculo?</h2>
+      <h2 class="display-l dark-text reveal">Pronta para ser referência além do seu círculo?</h2>
       <p class="hero-sub reveal">
         Agende o diagnóstico e descubra qual frente do método resolve o momento atual da sua marca primeiro.
       </p>
