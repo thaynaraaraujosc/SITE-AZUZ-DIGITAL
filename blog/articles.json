@@ -16,5 +16,14 @@
     "readingTime": 5,
     "category": "Inteligência artificial aplicada a marketing e negócios",
     "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "trafego-pago-para-pequenas-empresas",
+    "title": "Tráfego pago para pequenas empresas: como estruturar a campanha",
+    "description": "Tráfego pago para pequenas empresas só funciona com objetivo, público e oferta definidos. Veja como estruturar uma campanha sem queimar orçamento.",
+    "publishedAt": "2026-08-03",
+    "readingTime": 5,
+    "category": "Marketing e publicidade em geral",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
   }
 ]
