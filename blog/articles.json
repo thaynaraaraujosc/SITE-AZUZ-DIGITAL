@@ -25,5 +25,14 @@
     "readingTime": 5,
     "category": "Marketing e publicidade em geral",
     "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "crm-para-pequenas-empresas",
+    "title": "CRM para pequenas empresas: como parar de perder clientes na desorganização",
+    "description": "CRM para pequenas empresas organiza contatos, propostas e follow-up em um só lugar. Veja os sinais de alerta e como escolher a ferramenta certa.",
+    "publishedAt": "2026-08-06",
+    "readingTime": 6,
+    "category": "Tecnologia aplicada a negócios",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
   }
 ]
