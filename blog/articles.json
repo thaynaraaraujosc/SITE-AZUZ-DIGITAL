@@ -34,5 +34,14 @@
     "readingTime": 6,
     "category": "Tecnologia aplicada a negócios",
     "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "diagnostico-de-marca",
+    "title": "Diagnóstico de marca: o que é e por que fazer antes de investir",
+    "description": "Diagnóstico de marca revela o que trava o crescimento antes de qualquer campanha. Entenda o que ele analisa e por que a Azuz Digital aplica isso primeiro.",
+    "publishedAt": "2026-08-10",
+    "readingTime": 5,
+    "category": "Bastidores e método Azuz",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
   }
 ]
