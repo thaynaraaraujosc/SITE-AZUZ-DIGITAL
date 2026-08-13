@@ -43,5 +43,14 @@
     "readingTime": 5,
     "category": "Bastidores e método Azuz",
     "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "metricas-de-marketing-digital",
+    "title": "Métricas de marketing digital: quais acompanhar para não investir no escuro",
+    "description": "Métricas de marketing digital mostram se a campanha gera resultado ou só consome orçamento. Veja quais acompanhar e como interpretar cada uma.",
+    "publishedAt": "2026-08-13",
+    "readingTime": 5,
+    "category": "Marketing e publicidade em geral",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
   }
 ]
