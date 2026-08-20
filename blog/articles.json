@@ -61,5 +61,14 @@
     "readingTime": 5,
     "category": "Tecnologia aplicada a negócios",
     "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "automacao-de-atendimento-com-ia",
+    "title": "Automação de atendimento com IA sem perder o tom da marca",
+    "description": "Automação de atendimento com IA agiliza a resposta ao cliente, mas pode soar genérica sem estratégia. Veja como aplicar sem perder o tom da marca.",
+    "publishedAt": "2026-08-20",
+    "readingTime": 5,
+    "category": "Inteligência artificial aplicada a marketing e negócios",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
   }
 ]
