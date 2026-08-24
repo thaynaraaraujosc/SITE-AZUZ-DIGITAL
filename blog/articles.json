@@ -70,5 +70,14 @@
     "readingTime": 5,
     "category": "Inteligência artificial aplicada a marketing e negócios",
     "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "marketing-para-advogados",
+    "title": "Marketing para advogados: autoridade digital dentro da OAB",
+    "description": "Marketing para advogados exige equilíbrio entre autoridade digital e as regras de publicidade da OAB. Veja como estruturar isso sem infringir a ética.",
+    "publishedAt": "2026-08-24",
+    "readingTime": 5,
+    "category": "Posicionamento e branding para profissionais/empresas",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
   }
 ]
