@@ -79,5 +79,14 @@
     "readingTime": 5,
     "category": "Posicionamento e branding para profissionais/empresas",
     "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "plano-de-posicionamento-de-marca",
+    "title": "Plano de posicionamento de marca: da estratégia à execução",
+    "description": "Um plano de posicionamento de marca transforma diagnóstico em decisões concretas. Veja como a Azuz Digital estrutura esse plano em etapas práticas.",
+    "publishedAt": "2026-08-27",
+    "readingTime": 5,
+    "category": "Bastidores e método Azuz",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
   }
 ]
