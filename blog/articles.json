@@ -88,5 +88,14 @@
     "readingTime": 5,
     "category": "Bastidores e método Azuz",
     "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "funil-de-vendas-para-prestadores-de-servico",
+    "title": "Funil de vendas para prestadores de serviço: como estruturar do zero",
+    "description": "Funil de vendas para prestadores de serviço estrutura o caminho do contato até o contrato. Veja os sinais de alerta e os 5 passos para montar o seu.",
+    "publishedAt": "2026-08-31",
+    "readingTime": 5,
+    "category": "Marketing e publicidade em geral",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
   }
 ]
