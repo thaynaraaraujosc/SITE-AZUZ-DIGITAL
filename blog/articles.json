@@ -97,5 +97,14 @@
     "readingTime": 5,
     "category": "Marketing e publicidade em geral",
     "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "aplicativo-proprio-para-empresa",
+    "title": "Aplicativo próprio para empresa: quando vale a pena desenvolver um",
+    "description": "Aplicativo próprio para empresa nem sempre é o próximo passo certo. Veja os sinais que indicam a hora certa e quando um site institucional já resolve.",
+    "publishedAt": "2026-09-03",
+    "readingTime": 6,
+    "category": "Tecnologia aplicada a negócios",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
   }
 ]
