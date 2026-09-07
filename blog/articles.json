@@ -106,5 +106,14 @@
     "readingTime": 6,
     "category": "Tecnologia aplicada a negócios",
     "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "ia-generativa-no-marketing",
+    "title": "IA generativa no marketing: como usar sem perder a voz da marca",
+    "description": "IA generativa no marketing acelera a produção de conteúdo, mas sem estratégia gera texto genérico. Veja como usar a favor da marca sem perder a voz.",
+    "publishedAt": "2026-09-07",
+    "readingTime": 5,
+    "category": "Inteligência artificial aplicada a marketing e negócios",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
   }
 ]
