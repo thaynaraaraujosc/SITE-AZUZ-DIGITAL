@@ -115,5 +115,14 @@
     "readingTime": 5,
     "category": "Inteligência artificial aplicada a marketing e negócios",
     "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "execucao-de-estrategia-de-marca",
+    "title": "Execução de estratégia de marca: do plano à prática",
+    "description": "Execução de estratégia de marca é o que transforma o plano aprovado em ação concreta. Veja por que ele trava e o passo a passo para tirar do papel.",
+    "publishedAt": "2026-09-10",
+    "readingTime": 5,
+    "category": "Bastidores e método Azuz",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
   }
 ]
