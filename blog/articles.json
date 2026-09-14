@@ -124,5 +124,14 @@
     "readingTime": 5,
     "category": "Bastidores e método Azuz",
     "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "marketing-para-consultoras",
+    "title": "Marketing para consultoras: autoridade que gera contrato",
+    "description": "Marketing para consultoras exige provar autoridade técnica antes da reunião comercial. Veja como estruturar isso sem depender só de indicação.",
+    "publishedAt": "2026-09-14",
+    "readingTime": 6,
+    "category": "Posicionamento e branding para profissionais/empresas",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
   }
 ]
