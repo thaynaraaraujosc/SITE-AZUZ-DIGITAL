@@ -133,5 +133,14 @@
     "readingTime": 6,
     "category": "Posicionamento e branding para profissionais/empresas",
     "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "marketing-de-conteudo-para-empresas",
+    "title": "Marketing de conteúdo para empresas: como estruturar em 5 passos",
+    "description": "Marketing de conteúdo para empresas só funciona com tema definido, calendário fixo e etapa de conversão clara. Veja como estruturar em 5 passos.",
+    "publishedAt": "2026-09-17",
+    "readingTime": 5,
+    "category": "Marketing e publicidade em geral",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
   }
 ]
