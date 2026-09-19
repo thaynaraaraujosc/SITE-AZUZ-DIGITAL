@@ -5,6 +5,7 @@
   --navy: #0B1533;
   --navy-soft: #121b3f;
   --blue: #2E6BFF;
+  --cyan: #22D3EE;
   --gray-light: #F5F5F5;
   --white: #FFFFFF;
 
@@ -37,6 +38,10 @@ body {
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
+
+/* Splash-only pages (just the entrance, no scroll continuation) */
+body.entrance-only { height: 100vh; overflow: hidden; }
+body.entrance-only .entrance-hero { height: 100vh; }
 
 img { max-width: 100%; display: block; }
 a { color: inherit; text-decoration: none; }
@@ -162,13 +167,6 @@ h1, h2, h3 {
 .brand-logo { height: 30px; width: auto; }
 .brand-logo-navy { display: none; }
 
-/* Header opens over a light hero on the homepage: swap to the navy logo/lines
-   until the header scrolls into its solid navy state. */
-body.home .site-header:not(.scrolled) .brand-logo-white { display: none; }
-body.home .site-header:not(.scrolled) .brand-logo-navy { display: block; }
-body.home .site-header:not(.scrolled) .main-nav a { color: var(--navy); }
-body.home .site-header:not(.scrolled) .nav-toggle span { background: var(--navy); }
-
 .main-nav {
   display: flex;
   gap: 34px;
@@ -228,6 +226,127 @@ body.home .site-header:not(.scrolled) .nav-toggle span { background: var(--navy)
 }
 .arc-1 { width: 900px; height: 900px; top: -420px; right: -320px; }
 .arc-2 { width: 620px; height: 620px; bottom: -380px; left: -260px; border-color: rgba(255,255,255,0.06); }
+
+/* ============================================================
+   ENTRANCE — futuristic minimalist splash, full-bleed photo
+   ============================================================ */
+.entrance-hero {
+  position: relative;
+  height: 100vh;
+  min-height: 640px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--navy);
+}
+
+.entrance-grid {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  pointer-events: none;
+}
+.entrance-grid span { border-left: 1px solid rgba(255,255,255,0.12); height: 100%; }
+
+.entrance-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+.entrance-video {
+  position: absolute;
+  top: 50%; left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto; height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+.entrance-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(11,21,51,0.55) 0%, rgba(11,21,51,0.45) 45%, rgba(11,21,51,0.75) 100%);
+}
+
+.entrance-content {
+  position: relative;
+  z-index: 3;
+  max-width: 900px;
+  padding: 0 24px;
+  text-align: center;
+  color: #fff;
+}
+
+.entrance-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.2rem, 5.2vw, 4.2rem);
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  margin: 0 0 24px;
+}
+
+.entrance-sub {
+  max-width: 560px;
+  margin: 0 auto 40px;
+  font-size: clamp(15px, 1.6vw, 18px);
+  font-weight: 300;
+  color: rgba(255,255,255,0.88);
+}
+
+.entrance-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  cursor: pointer;
+}
+.entrance-cta-label {
+  border-radius: 100px;
+  background: var(--cyan);
+  color: var(--navy);
+  padding: 16px 26px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 14px;
+  transition: background 0.5s var(--ease), color 0.5s var(--ease);
+}
+.entrance-cta-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--cyan);
+  color: var(--navy);
+  overflow: hidden;
+  transition: background 0.5s var(--ease), color 0.5s var(--ease);
+}
+.entrance-cta-icon svg {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  transition: transform 0.5s var(--ease);
+}
+.entrance-cta-icon svg:first-child { transform: translateX(-50%); }
+.entrance-cta-icon svg:last-child { transform: translateX(-220%); }
+.entrance-cta:hover .entrance-cta-label,
+.entrance-cta:hover .entrance-cta-icon {
+  background: rgba(255,255,255,0.1);
+  color: var(--cyan);
+}
+.entrance-cta:hover .entrance-cta-icon svg:first-child { transform: translateX(220%); }
+.entrance-cta:hover .entrance-cta-icon svg:last-child { transform: translateX(-50%); }
+
+@media (max-width: 760px) {
+  .entrance-grid { grid-template-columns: repeat(3, 1fr); }
+  .entrance-hero { height: 100svh; }
+}
 
 /* ============================================================
    HERO
@@ -722,3 +841,129 @@ body.home .site-header:not(.scrolled) .nav-toggle span { background: var(--navy)
   .footer-inner { grid-template-columns: 1fr; gap: 32px; }
   .footer-bottom { flex-direction: column; align-items: flex-start; }
 }
+
+/* ============================================================
+   EXPLORAR — coverflow selector (posicionamento / tráfego / CRM / sites)
+   ============================================================ */
+.coverflow-page {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 140px 0 60px;
+  overflow: hidden;
+  background: var(--navy);
+}
+
+.coverflow-intro { text-align: center; margin-bottom: 8px; }
+.coverflow-intro .section-eyebrow { justify-content: center; }
+.coverflow-intro h1 { color: #fff; }
+
+.coverflow {
+  --cf-card: clamp(160px, 20vw, 260px);
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 40px auto 0;
+}
+
+.coverflow-track {
+  position: relative;
+  height: var(--cf-card);
+  perspective: calc(var(--cf-card) * 3);
+  cursor: grab;
+  touch-action: pan-y;
+}
+.coverflow-track:active { cursor: grabbing; }
+
+.coverflow-card {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: var(--cf-card);
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius-m);
+  overflow: hidden;
+  will-change: transform;
+  text-decoration: none;
+}
+
+.coverflow-card-inner {
+  height: 100%;
+  width: 100%;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 8px;
+  background: linear-gradient(155deg, rgba(46,107,255,0.22), rgba(11,21,51,0.92));
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 24px 50px rgba(0,0,0,0.35);
+}
+.coverflow-icon {
+  width: 38px; height: 38px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 50%;
+  background: rgba(34,211,238,0.14);
+  color: var(--cyan);
+  margin-bottom: auto;
+}
+.coverflow-icon svg { width: 20px; height: 20px; }
+.coverflow-card-inner h3 { color: #fff; font-size: 16px; margin: 0; }
+.coverflow-card-inner p { color: rgba(255,255,255,0.66); font-size: 12.5px; margin: 0; display: none; }
+
+.coverflow-nav {
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(11,21,51,0.6);
+  backdrop-filter: blur(8px);
+  color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  transition: border-color 0.3s var(--ease), background 0.3s var(--ease);
+  z-index: 50;
+}
+.coverflow-nav:hover { border-color: var(--cyan); background: rgba(34,211,238,0.12); }
+.coverflow-nav svg { width: 18px; height: 18px; }
+.coverflow-prev { left: -10px; }
+.coverflow-next { right: -10px; }
+
+.coverflow-caption {
+  text-align: center;
+  margin-top: 48px;
+  min-height: 150px;
+}
+.coverflow-caption-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 22px;
+  color: #fff;
+  margin: 0 0 8px;
+}
+.coverflow-caption-sub {
+  font-size: 14px;
+  color: var(--text-on-dark-soft);
+  margin: 0 0 26px;
+}
+.coverflow-go .entrance-cta-icon { width: 44px; height: 44px; }
+.coverflow-go .entrance-cta-icon svg { width: 17px; height: 17px; }
+
+@media (max-width: 760px) {
+  .coverflow { --cf-card: clamp(120px, 38vw, 180px); }
+  .coverflow-nav { display: none; }
+  .coverflow-page { padding: 120px 0 50px; }
+}
+
+/* ============================================================
+   PLACEHOLDER (stub pages awaiting final copy)
+   ============================================================ */
+.placeholder-page { min-height: 100vh; display: flex; align-items: center; padding-top: 140px; }
+.placeholder-inner { max-width: 640px; }
+.placeholder-inner .display-l { margin-bottom: 18px; }
+.placeholder-inner .hero-sub { margin: 0 0 32px; text-align: left; }
