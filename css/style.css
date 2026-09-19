@@ -167,6 +167,13 @@ h1, h2, h3 {
 .brand-logo { height: 30px; width: auto; }
 .brand-logo-navy { display: none; }
 
+/* Pages whose top section is light (e.g. the coverflow selector): swap the
+   header to the navy logo/lines until it scrolls into its solid navy state. */
+body.light-top .site-header:not(.scrolled) .brand-logo-white { display: none; }
+body.light-top .site-header:not(.scrolled) .brand-logo-navy { display: block; }
+body.light-top .site-header:not(.scrolled) .main-nav a { color: var(--navy); }
+body.light-top .site-header:not(.scrolled) .nav-toggle span { background: var(--navy); }
+
 .main-nav {
   display: flex;
   gap: 34px;
@@ -854,12 +861,14 @@ h1, h2, h3 {
   justify-content: center;
   padding: 140px 0 60px;
   overflow: hidden;
-  background: var(--navy);
+  background: var(--white);
+  color: var(--text-on-light);
 }
+.coverflow-page .dot-grid { background-image: radial-gradient(rgba(11,21,51,0.08) 1px, transparent 1px); }
 
 .coverflow-intro { text-align: center; margin-bottom: 8px; }
 .coverflow-intro .section-eyebrow { justify-content: center; }
-.coverflow-intro h1 { color: #fff; }
+.coverflow-intro h1 { color: var(--navy); }
 
 .coverflow {
   --cf-card: clamp(160px, 20vw, 260px);
@@ -920,19 +929,20 @@ h1, h2, h3 {
   translate: 0 -50%;
   width: 44px; height: 44px;
   border-radius: 50%;
-  border: 1px solid rgba(255,255,255,0.18);
-  background: rgba(11,21,51,0.6);
+  border: 1px solid rgba(11,21,51,0.14);
+  background: rgba(255,255,255,0.85);
   backdrop-filter: blur(8px);
-  color: #fff;
+  color: var(--navy);
   display: flex; align-items: center; justify-content: center;
   cursor: pointer;
-  transition: border-color 0.3s var(--ease), background 0.3s var(--ease);
+  box-shadow: 0 8px 20px rgba(11,21,51,0.08);
+  transition: border-color 0.3s var(--ease), color 0.3s var(--ease);
   z-index: 50;
 }
-.coverflow-nav:hover { border-color: var(--cyan); background: rgba(34,211,238,0.12); }
+.coverflow-nav:hover { border-color: var(--cyan); color: #0aa8c2; }
 .coverflow-nav svg { width: 18px; height: 18px; }
-.coverflow-prev { left: -10px; }
-.coverflow-next { right: -10px; }
+.coverflow-prev { left: 0; }
+.coverflow-next { right: 0; }
 
 .coverflow-caption {
   text-align: center;
@@ -943,20 +953,25 @@ h1, h2, h3 {
   font-family: var(--font-display);
   font-weight: 600;
   font-size: 22px;
-  color: #fff;
+  color: var(--navy);
   margin: 0 0 8px;
 }
 .coverflow-caption-sub {
   font-size: 14px;
-  color: var(--text-on-dark-soft);
+  color: var(--text-on-light-soft);
   margin: 0 0 26px;
 }
-.coverflow-go .entrance-cta-icon { width: 44px; height: 44px; }
+.coverflow-go .entrance-cta-label { background: var(--navy); color: #fff; }
+.coverflow-go .entrance-cta-icon { width: 44px; height: 44px; background: var(--navy); color: #fff; }
 .coverflow-go .entrance-cta-icon svg { width: 17px; height: 17px; }
+.coverflow-go:hover .entrance-cta-label,
+.coverflow-go:hover .entrance-cta-icon { background: var(--cyan); color: var(--navy); }
 
 @media (max-width: 760px) {
   .coverflow { --cf-card: clamp(120px, 38vw, 180px); }
-  .coverflow-nav { display: none; }
+  .coverflow-nav { width: 36px; height: 36px; }
+  .coverflow-prev { left: -4px; }
+  .coverflow-next { right: -4px; }
   .coverflow-page { padding: 120px 0 50px; }
 }
 

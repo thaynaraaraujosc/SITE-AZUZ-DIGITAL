@@ -10,11 +10,11 @@
   const prevBtn = document.getElementById('coverflow-prev');
   const nextBtn = document.getElementById('coverflow-next');
 
-  const ROTATE = 46;
-  const DEPTH = 0.62;
-  const FALLOFF = 0.6;
-  const FADE = 0.32;
-  const GAP = 0.62;
+  const ROTATE = 44;
+  const DEPTH = 0.58;
+  const FALLOFF = 0.56;
+  const FADE = 0.14;
+  const GAP = 0.08;
 
   let pos = 0;
   let target = 0;
@@ -48,10 +48,12 @@
         `translateX(calc(-50% + ${offset * pitch}px)) ` +
         `translateZ(${-DEPTH * width * ramp}px) rotateY(${-tilt}deg)`;
 
-      const edge = Math.min(1, Math.max(0, count / 2 - distance));
-      card.style.opacity = String(Math.max(0.15, 1 - FADE * distance) * (distance < count / 2 ? 1 : edge || 1));
+      // With few cards the "opposite" one sits right at the wrap point —
+      // keep it dim rather than snapping to invisible, so the ring still
+      // reads as continuous instead of stopping dead at 3 visible cards.
+      const edge = Math.min(1, Math.max(0.35, count / 2 - distance + 0.6));
+      card.style.opacity = String(Math.max(0.15, 1 - FADE * distance) * edge);
       card.style.zIndex = String(100 - Math.round(distance));
-      card.style.pointerEvents = distance < 0.5 ? 'auto' : 'auto';
     });
   };
 
