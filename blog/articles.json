@@ -16,5 +16,131 @@
     "readingTime": 5,
     "category": "Inteligência artificial aplicada a marketing e negócios",
     "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "trafego-pago-para-pequenas-empresas",
+    "title": "Tráfego pago para pequenas empresas: como estruturar a campanha",
+    "description": "Tráfego pago para pequenas empresas só funciona com objetivo, público e oferta definidos. Veja como estruturar uma campanha sem queimar orçamento.",
+    "publishedAt": "2026-08-03",
+    "readingTime": 5,
+    "category": "Marketing e publicidade em geral",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "crm-para-pequenas-empresas",
+    "title": "CRM para pequenas empresas: como parar de perder clientes na desorganização",
+    "description": "CRM para pequenas empresas organiza contatos, propostas e follow-up em um só lugar. Veja os sinais de alerta e como escolher a ferramenta certa.",
+    "publishedAt": "2026-08-06",
+    "readingTime": 6,
+    "category": "Tecnologia aplicada a negócios",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "diagnostico-de-marca",
+    "title": "Diagnóstico de marca: o que é e por que fazer antes de investir",
+    "description": "Diagnóstico de marca revela o que trava o crescimento antes de qualquer campanha. Entenda o que ele analisa e por que a Azuz Digital aplica isso primeiro.",
+    "publishedAt": "2026-08-10",
+    "readingTime": 5,
+    "category": "Bastidores e método Azuz",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "metricas-de-marketing-digital",
+    "title": "Métricas de marketing digital: quais acompanhar para não investir no escuro",
+    "description": "Métricas de marketing digital mostram se a campanha gera resultado ou só consome orçamento. Veja quais acompanhar e como interpretar cada uma.",
+    "publishedAt": "2026-08-13",
+    "readingTime": 5,
+    "category": "Marketing e publicidade em geral",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "site-institucional-profissional",
+    "title": "Site institucional profissional: por que investir agora",
+    "description": "Um site institucional profissional comunica autoridade e converte visitantes em clientes. Veja os sinais de alerta e como estruturar o seu em 5 passos.",
+    "publishedAt": "2026-08-17",
+    "readingTime": 5,
+    "category": "Tecnologia aplicada a negócios",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "automacao-de-atendimento-com-ia",
+    "title": "Automação de atendimento com IA sem perder o tom da marca",
+    "description": "Automação de atendimento com IA agiliza a resposta ao cliente, mas pode soar genérica sem estratégia. Veja como aplicar sem perder o tom da marca.",
+    "publishedAt": "2026-08-20",
+    "readingTime": 5,
+    "category": "Inteligência artificial aplicada a marketing e negócios",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "marketing-para-advogados",
+    "title": "Marketing para advogados: autoridade digital dentro da OAB",
+    "description": "Marketing para advogados exige equilíbrio entre autoridade digital e as regras de publicidade da OAB. Veja como estruturar isso sem infringir a ética.",
+    "publishedAt": "2026-08-24",
+    "readingTime": 5,
+    "category": "Posicionamento e branding para profissionais/empresas",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "plano-de-posicionamento-de-marca",
+    "title": "Plano de posicionamento de marca: da estratégia à execução",
+    "description": "Um plano de posicionamento de marca transforma diagnóstico em decisões concretas. Veja como a Azuz Digital estrutura esse plano em etapas práticas.",
+    "publishedAt": "2026-08-27",
+    "readingTime": 5,
+    "category": "Bastidores e método Azuz",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "funil-de-vendas-para-prestadores-de-servico",
+    "title": "Funil de vendas para prestadores de serviço: como estruturar do zero",
+    "description": "Funil de vendas para prestadores de serviço estrutura o caminho do contato até o contrato. Veja os sinais de alerta e os 5 passos para montar o seu.",
+    "publishedAt": "2026-08-31",
+    "readingTime": 5,
+    "category": "Marketing e publicidade em geral",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "aplicativo-proprio-para-empresa",
+    "title": "Aplicativo próprio para empresa: quando vale a pena desenvolver um",
+    "description": "Aplicativo próprio para empresa nem sempre é o próximo passo certo. Veja os sinais que indicam a hora certa e quando um site institucional já resolve.",
+    "publishedAt": "2026-09-03",
+    "readingTime": 6,
+    "category": "Tecnologia aplicada a negócios",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "ia-generativa-no-marketing",
+    "title": "IA generativa no marketing: como usar sem perder a voz da marca",
+    "description": "IA generativa no marketing acelera a produção de conteúdo, mas sem estratégia gera texto genérico. Veja como usar a favor da marca sem perder a voz.",
+    "publishedAt": "2026-09-07",
+    "readingTime": 5,
+    "category": "Inteligência artificial aplicada a marketing e negócios",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "execucao-de-estrategia-de-marca",
+    "title": "Execução de estratégia de marca: do plano à prática",
+    "description": "Execução de estratégia de marca é o que transforma o plano aprovado em ação concreta. Veja por que ele trava e o passo a passo para tirar do papel.",
+    "publishedAt": "2026-09-10",
+    "readingTime": 5,
+    "category": "Bastidores e método Azuz",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "marketing-para-consultoras",
+    "title": "Marketing para consultoras: autoridade que gera contrato",
+    "description": "Marketing para consultoras exige provar autoridade técnica antes da reunião comercial. Veja como estruturar isso sem depender só de indicação.",
+    "publishedAt": "2026-09-14",
+    "readingTime": 6,
+    "category": "Posicionamento e branding para profissionais/empresas",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "marketing-de-conteudo-para-empresas",
+    "title": "Marketing de conteúdo para empresas: como estruturar em 5 passos",
+    "description": "Marketing de conteúdo para empresas só funciona com tema definido, calendário fixo e etapa de conversão clara. Veja como estruturar em 5 passos.",
+    "publishedAt": "2026-09-17",
+    "readingTime": 5,
+    "category": "Marketing e publicidade em geral",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
   }
 ]
