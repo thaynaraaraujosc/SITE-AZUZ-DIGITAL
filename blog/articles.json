@@ -142,5 +142,14 @@
     "readingTime": 5,
     "category": "Marketing e publicidade em geral",
     "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "automacao-de-processos-para-empresas",
+    "title": "Automação de processos: como reduzir trabalho manual na empresa",
+    "description": "Automação de processos reduz retrabalho e libera a equipe para o que gera receita. Veja os sinais de alerta e o passo a passo para aplicar na empresa.",
+    "publishedAt": "2026-09-21",
+    "readingTime": 5,
+    "category": "Tecnologia aplicada a negócios",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
   }
 ]
