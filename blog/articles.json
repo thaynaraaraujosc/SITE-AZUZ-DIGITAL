@@ -151,5 +151,14 @@
     "readingTime": 5,
     "category": "Tecnologia aplicada a negócios",
     "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "ferramentas-de-ia-para-marketing",
+    "title": "Ferramentas de IA para marketing: como escolher a certa",
+    "description": "Ferramentas de IA para marketing prometem produtividade, mas sem critério geram ruído de marca. Veja os riscos e o passo a passo para escolher a certa.",
+    "publishedAt": "2026-09-24",
+    "readingTime": 5,
+    "category": "Inteligência artificial aplicada a marketing e negócios",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
   }
 ]
