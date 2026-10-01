@@ -169,5 +169,14 @@
     "readingTime": 5,
     "category": "Bastidores e método Azuz",
     "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "marketing-para-dentistas",
+    "title": "Marketing para dentistas: autoridade dentro do código de ética",
+    "description": "Marketing para dentistas exige equilíbrio entre autoridade técnica e as normas do Conselho Federal de Odontologia. Veja como estruturar isso na prática.",
+    "publishedAt": "2026-10-01",
+    "readingTime": 5,
+    "category": "Posicionamento e branding para profissionais/empresas",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
   }
 ]
