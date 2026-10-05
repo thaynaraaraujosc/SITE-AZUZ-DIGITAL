@@ -178,5 +178,14 @@
     "readingTime": 5,
     "category": "Posicionamento e branding para profissionais/empresas",
     "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "remarketing-para-empresas",
+    "title": "Remarketing: como recuperar clientes que não converteram",
+    "description": "Remarketing recupera visitantes que não compraram na primeira visita. Veja como estruturar uma campanha eficaz em 5 passos sem parecer invasivo.",
+    "publishedAt": "2026-10-05",
+    "readingTime": 5,
+    "category": "Marketing e publicidade em geral",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
   }
 ]
