@@ -187,5 +187,14 @@
     "readingTime": 5,
     "category": "Marketing e publicidade em geral",
     "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "agendamento-online-para-negocios",
+    "title": "Agendamento online: como organizar a agenda sem perder cliente",
+    "description": "Agendamento online reduz falta e choque de horário na agenda do seu negócio. Veja os sinais de alerta e o passo a passo para implementar em 5 etapas.",
+    "publishedAt": "2026-10-08",
+    "readingTime": 5,
+    "category": "Tecnologia aplicada a negócios",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
   }
 ]
