@@ -196,5 +196,14 @@
     "readingTime": 5,
     "category": "Tecnologia aplicada a negócios",
     "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "prompt-de-ia-para-marketing",
+    "title": "Prompt de IA para marketing: como escrever para ter resultado real",
+    "description": "Prompt de IA para marketing mal estruturado gera texto genérico e sem voz de marca. Veja os elementos de um prompt que funciona e o passo a passo para escrever.",
+    "publishedAt": "2026-10-12",
+    "readingTime": 5,
+    "category": "Inteligência artificial aplicada a marketing e negócios",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
   }
 ]
