@@ -205,5 +205,14 @@
     "readingTime": 5,
     "category": "Inteligência artificial aplicada a marketing e negócios",
     "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "revisao-de-estrategia-de-marca",
+    "title": "Revisão de estratégia de marca: quando repensar o que já funciona",
+    "description": "Revisão de estratégia de marca evita que um posicionamento que funcionou perca força com o tempo. Veja os sinais de alerta e os passos para revisar.",
+    "publishedAt": "2026-10-15",
+    "readingTime": 5,
+    "category": "Bastidores e método Azuz",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
   }
 ]
