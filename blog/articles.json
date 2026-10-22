@@ -223,5 +223,14 @@
     "readingTime": 5,
     "category": "Posicionamento e branding para profissionais/empresas",
     "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "email-marketing-para-empresas",
+    "title": "Email marketing para empresas: como reativar clientes sem parecer spam",
+    "description": "Email marketing para empresas reativa clientes quando a lista é segmentada e a frequência é controlada. Veja como estruturar uma campanha em 5 passos.",
+    "publishedAt": "2026-10-22",
+    "readingTime": 5,
+    "category": "Marketing e publicidade em geral",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
   }
 ]
