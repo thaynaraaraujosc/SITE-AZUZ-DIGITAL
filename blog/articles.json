@@ -232,5 +232,14 @@
     "readingTime": 5,
     "category": "Marketing e publicidade em geral",
     "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "landing-page-para-captacao-de-clientes",
+    "title": "Landing page para captar clientes: como estruturar",
+    "description": "Uma landing page bem estruturada capta clientes qualificados antes da reunião comercial. Veja os elementos essenciais e o passo a passo para criar a sua.",
+    "publishedAt": "2026-10-26",
+    "readingTime": 5,
+    "category": "Tecnologia aplicada a negócios",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
   }
 ]
