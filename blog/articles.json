@@ -250,5 +250,14 @@
     "readingTime": 5,
     "category": "Posicionamento e branding para profissionais/empresas",
     "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "analise-de-concorrencia-com-ia",
+    "title": "Análise de concorrência com IA: como aplicar na prática",
+    "description": "Análise de concorrência com inteligência artificial revela o que o concorrente está fazendo antes do cliente decidir por ele. Veja como aplicar em 5 passos.",
+    "publishedAt": "2026-11-02",
+    "readingTime": 5,
+    "category": "Inteligência artificial aplicada a marketing e negócios",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
   }
 ]
