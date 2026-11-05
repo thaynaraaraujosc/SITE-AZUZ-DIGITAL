@@ -259,5 +259,14 @@
     "readingTime": 5,
     "category": "Inteligência artificial aplicada a marketing e negócios",
     "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "briefing-estrategico-de-marca",
+    "title": "Briefing estratégico de marca: o que vem antes do diagnóstico",
+    "description": "Um briefing estratégico de marca malfeito compromete o diagnóstico que vem depois. Veja o que perguntar antes de começar qualquer projeto de posicionamento.",
+    "publishedAt": "2026-11-05",
+    "readingTime": 4,
+    "category": "Bastidores e método Azuz",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
   }
 ]
