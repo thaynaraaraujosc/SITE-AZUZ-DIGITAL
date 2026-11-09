@@ -268,5 +268,14 @@
     "readingTime": 4,
     "category": "Bastidores e método Azuz",
     "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "copywriting-para-anuncios",
+    "title": "Copywriting para anúncios: como escrever textos que convertem",
+    "description": "Copywriting para anúncios fraco desperdiça verba de tráfego pago. Veja a estrutura de texto que converte e o passo a passo para escrever o seu anúncio.",
+    "publishedAt": "2026-11-09",
+    "readingTime": 5,
+    "category": "Marketing e publicidade em geral",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
   }
 ]
