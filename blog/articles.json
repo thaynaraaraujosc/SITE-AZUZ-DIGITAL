@@ -277,5 +277,14 @@
     "readingTime": 5,
     "category": "Marketing e publicidade em geral",
     "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "manutencao-de-site-institucional",
+    "title": "Manutenção de site institucional: o que fazer após o lançamento",
+    "description": "Manutenção de site institucional evita queda de desempenho, falhas de segurança e perda de posição no Google. Veja os sinais de alerta e como estruturar isso.",
+    "publishedAt": "2026-11-12",
+    "readingTime": 5,
+    "category": "Tecnologia aplicada a negócios",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
   }
 ]
