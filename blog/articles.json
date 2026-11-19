@@ -295,5 +295,14 @@
     "readingTime": 5,
     "category": "Posicionamento e branding para profissionais/empresas",
     "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
+  },
+  {
+    "slug": "uso-responsavel-de-ia-no-marketing",
+    "title": "Uso responsável de IA no marketing: o que saber antes",
+    "description": "Uso responsável de IA no marketing evita conteúdo genérico, erro de compliance e perda de confiança do cliente. Veja como aplicar isso em 5 passos.",
+    "publishedAt": "2026-11-19",
+    "readingTime": 5,
+    "category": "Inteligência artificial aplicada a marketing e negócios",
+    "author": { "name": "Thaynara Araujo", "role": "CEO e Estrategista de Marca" }
   }
 ]
